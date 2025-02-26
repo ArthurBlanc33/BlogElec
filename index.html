@@ -15,14 +15,22 @@
             crossorigin="anonymous"></script>
 
         <link rel="icon" type="image/png" href="favicon-64.ico" />
+
+        <script src="index.js" defer></script>
     </head>
     <body>
 
         <nav>
-            <a href="index.html">Accueil</a>
-            <a href="article.html">Électroménagers à prix choc</a>
-            <a href="#">Contact</a>
-            <a href="#">À propos</a>
+            <div class="navbar-container">
+                <a  class="logo">Electroménagers</a>
+                <div class="menu-icon" id="menuIcon">☰</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="article.html">Électroménagers à prix choc</a></li>
+                    <li><a href="aporpos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
         <header>
@@ -59,16 +67,10 @@
         <button id="toggle-sidebar">❌</button>
 
         <aside class="sidebar">
-            <h3>Suivez-nous</h3>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">YouTube</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
+          
+        
 
-            <h3>Newsletter</h3>
+            <h3 class="newsletter">Newsletter</h3>
             <form class="newsletter">
                 <input type="email" placeholder="Votre adresse mail">
                 <button type="submit">Je m'inscris</button>
